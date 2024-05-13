@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Aula 10 - AdMob</string>
+    <string name="banner_id">ca-app-pub-3940256099942544~3347511713</string>
+    <string name="intersticial_id">ca-app-pub-3940256099942544/1033173712</string>
+</resources>

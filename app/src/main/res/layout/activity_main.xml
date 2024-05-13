@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:paddingTop="20dp"
+    android:paddingHorizontal="20dp"
+    android:background="#3700B3">
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        />
+    <TextView
+        android:id="@+id/texto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titulo"
+        android:text="Jogo dos Botões"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:layout_marginTop="20sp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/dificuldade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Escolha a dificuldade: "
+        android:layout_centerHorizontal="true"
+        android:textSize="25sp"
+        android:textColor="@color/white"
+        android:layout_below="@id/texto"
+        android:layout_marginTop="70sp"/>
+    <Button
+        android:id="@+id/btnFacil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dificuldade"
+        android:layout_marginTop="30sp"
+        android:layout_centerHorizontal="true"
+        android:text="Fácil"/>
+
+    <Button
+        android:id="@+id/btnDificil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnFacil"
+        android:layout_marginTop="20sp"
+        android:layout_centerHorizontal="true"
+        android:text="Difícil"/>
+
+
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="invisible"
+        >
+        <Button
+            android:id="@+id/btn01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A"
+            android:layout_marginBottom="20sp"
+            android:padding="10sp"/>
+        <Button
+            android:id="@+id/btn02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="B"
+            android:layout_below="@id/btn01"
+            android:layout_marginBottom="20sp"
+            android:padding="10sp"/>
+        <Button
+            android:id="@+id/btn03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="C"
+            android:layout_below="@id/btn02"
+            android:layout_marginBottom="20sp"
+            android:padding="10sp"/>
+        <Button
+            android:id="@+id/btn04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="D"
+            android:layout_below="@id/btn03"
+            android:padding="10sp"/>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnReset"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/adView"
+        android:layout_marginBottom="40sp"
+        android:text="RESET"/>
+
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-3940256099942544/9214589741">
+    </com.google.android.gms.ads.AdView>
+
+
+</RelativeLayout>
